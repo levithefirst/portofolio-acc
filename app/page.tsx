@@ -9,6 +9,7 @@ import {
   Stats,
   Series,
   Highlights,
+  BountyWins,
   Portfolios,
   Contact,
 } from "@/components/Sections";
@@ -24,6 +25,7 @@ export default function Home() {
       <Stats />
       <Series />
       <Highlights />
+      <BountyWins />
       <Portfolios />
       <Contact />
       <Footer />
