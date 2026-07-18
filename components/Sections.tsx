@@ -38,9 +38,7 @@ export function Services() {
         {services.map((s, i) => (
           <Reveal key={s.title} delay={i * 0.06}>
             <div className="glass ember-border group h-full rounded-4xl p-7 transition-transform duration-300 hover:-translate-y-1 md:p-9">
-              <h3 className="font-display text-xl font-semibold text-white md:text-2xl">
-                {s.title}
-              </h3>
+              <h3 className="font-display text-xl font-semibold text-white md:text-2xl">{s.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-hi md:text-base">{s.desc}</p>
             </div>
           </Reveal>
@@ -129,15 +127,8 @@ export function Portfolios() {
       <div className="grid gap-4 md:grid-cols-3">
         {portfolios.map((p, i) => (
           <Reveal key={p.url} delay={i * 0.07}>
-            
-              href={p.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass ember-border group flex h-full flex-col justify-between gap-8 rounded-4xl p-7 transition-transform duration-300 hover:-translate-y-1 md:p-9"
-            >
-              <h3 className="font-display text-lg font-semibold text-white md:text-xl">
-                {p.title}
-              </h3>
+            <a href={p.url} target="_blank" rel="noopener noreferrer" className="glass ember-border group flex h-full flex-col justify-between gap-8 rounded-4xl p-7 transition-transform duration-300 hover:-translate-y-1 md:p-9">
+              <h3 className="font-display text-lg font-semibold text-white md:text-xl">{p.title}</h3>
               <span className="inline-flex items-center gap-2 text-sm text-hi transition-colors group-hover:text-white">
                 Open folder
                 <span aria-hidden className="transition-transform duration-200 group-hover:translate-x-1">→</span>
@@ -165,16 +156,9 @@ export function Contact() {
             >
               <div>
                 <p className="text-xs text-hi md:text-sm">{c.label}</p>
-                <p className="font-display mt-1 text-lg font-semibold text-white md:text-xl">
-                  {c.handle}
-                </p>
+                <p className="font-display mt-1 text-lg font-semibold text-white md:text-xl">{c.handle}</p>
               </div>
-              <span
-                aria-hidden
-                className="text-hi transition-all duration-200 group-hover:translate-x-1 group-hover:text-white"
-              >
-                →
-              </span>
+              <span aria-hidden className="text-hi transition-all duration-200 group-hover:translate-x-1 group-hover:text-white">→</span>
             </motion.a>
           </Reveal>
         ))}
