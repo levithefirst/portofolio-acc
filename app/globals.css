@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #161616;
+  color: #f4f2f2;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(175, 52, 51, 0.35);
+  color: #fff;
+}
+
+/* glass surface */
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(114, 114, 114, 0.10),
+    rgba(54, 51, 51, 0.18) 45%,
+    rgba(22, 22, 22, 0.35)
+  );
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  border: 1px solid rgba(114, 114, 114, 0.16);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.05) inset,
+    0 24px 60px -24px rgba(0, 0, 0, 0.65);
+}
+
+/* gradient border wrapper: soft ember woven through the grays */
+.ember-border {
+  position: relative;
+  border-radius: inherit;
+}
+.ember-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    140deg,
+    rgba(114, 114, 114, 0.35),
+    rgba(175, 52, 51, 0.32) 30%,
+    rgba(81, 80, 80, 0.18) 55%,
+    rgba(175, 52, 51, 0.20) 80%,
+    rgba(54, 51, 51, 0.30)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* headline gradient: grays melting into ember */
+.text-melt {
+  background: linear-gradient(
+    120deg,
+    #f6f4f4 0%,
+    #c9c6c6 34%,
+    #9f6663 58%,
+    #cf6a64 72%,
+    #8a8888 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.eyebrow {
+  letter-spacing: 0.28em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
