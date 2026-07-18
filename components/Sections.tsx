@@ -166,10 +166,7 @@ export function Contact() {
 
       <Reveal delay={0.2}>
         <div className="mt-10 flex justify-center">
-          
-            href="mailto:leviweb3x@gmail.com"
-            className="ember-border inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-deep via-[#7a3735] to-deep px-9 py-4 text-base font-medium text-white shadow-2xl shadow-black/50 transition-transform duration-200 hover:scale-[1.03] active:scale-[0.97]"
-          >
+          <a href="mailto:leviweb3x@gmail.com" className="ember-border inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-deep via-[#7a3735] to-deep px-9 py-4 text-base font-medium text-white shadow-2xl shadow-black/50 transition-transform duration-200 hover:scale-[1.03] active:scale-[0.97]">
             Let's Talk <span aria-hidden>→</span>
           </a>
         </div>
