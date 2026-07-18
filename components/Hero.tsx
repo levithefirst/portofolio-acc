@@ -10,7 +10,6 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-[100svh] items-center overflow-hidden px-5 pb-16 pt-32 sm:px-8">
-      {/* aurora backdrop: ember bleeding through the grays */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-[-20%] h-[70vh] w-[90vw] -translate-x-1/2 animate-aurora rounded-full bg-[radial-gradient(ellipse_at_center,rgba(175,52,51,0.22),rgba(81,80,80,0.14)_45%,transparent_70%)] blur-3xl" />
         <div className="absolute bottom-[-30%] right-[-10%] h-[60vh] w-[60vw] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(54,51,51,0.6),transparent_65%)] blur-3xl" />
@@ -33,12 +32,7 @@ export default function Hero() {
           />
           <div>
             <p className="font-display text-lg font-semibold text-white">levi</p>
-            
-              href="https://x.com/levithefirst"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-hi transition-colors hover:text-white"
-            >
+            <a href="https://x.com/levithefirst" target="_blank" rel="noopener noreferrer" className="text-sm text-hi transition-colors hover:text-white">
               @levithefirst
             </a>
           </div>
@@ -71,10 +65,7 @@ export default function Hero() {
           className="mt-7 flex flex-wrap gap-2.5"
         >
           {tags.map((t) => (
-            <span
-              key={t}
-              className="glass rounded-full px-4 py-2 text-xs text-white/80 md:text-sm"
-            >
+            <span key={t} className="glass rounded-full px-4 py-2 text-xs text-white/80 md:text-sm">
               {t}
             </span>
           ))}
@@ -104,9 +95,7 @@ export default function Hero() {
           {stats.map((s) => (
             <div key={s.label} className="glass ember-border rounded-3xl p-5 md:p-6">
               <dt className="order-2 mt-1 block text-xs text-hi md:text-sm">{s.label}</dt>
-              <dd className="font-display text-3xl font-semibold text-white md:text-4xl">
-                {s.value}
-              </dd>
+              <dd className="font-display text-3xl font-semibold text-white md:text-4xl">{s.value}</dd>
             </div>
           ))}
         </motion.dl>
