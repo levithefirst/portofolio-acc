@@ -12,6 +12,7 @@ import {
   simplified,
   highlights,
   portfolios,
+  bountyWins,
   contacts,
 } from "@/lib/data";
 
@@ -21,7 +22,7 @@ export function About() {
       <Reveal>
         <div className="glass ember-border rounded-4xl p-7 md:p-12">
           <p className="max-w-3xl font-display text-xl leading-relaxed text-white/90 md:text-3xl">
-            levi is a jack of all creative trades and master of content. he specializes in{" "}
+            i'm a jack of all creative trades and master of content. i specialize in{" "}
             <span className="text-melt">copywriting, content creation, content strategy, and community management</span>{" "}
             in Web3.
           </p>
@@ -111,10 +112,30 @@ export function Series() {
 
 export function Highlights() {
   return (
-    <Section id="highlights" num="05" title="highlighted pieces" kicker="standout threads worth your scroll">
+    <Section id="highlights" num="05" title="highlighted pieces" kicker="standout content worth a read">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {highlights.map((h, i) => (
-          <TweetCard key={h.url} label="thread" title={h.title} url={h.url} index={i} />
+          <TweetCard key={h.url} label={h.label} title={h.title} url={h.url} index={i} />
+        ))}
+      </div>
+    </Section>
+  );
+}
+
+export function BountyWins() {
+  return (
+    <Section id="bounty-wins" num="06" title="bounty wins">
+      <div className="grid gap-4 md:grid-cols-3">
+        {bountyWins.map((p, i) => (
+          <Reveal key={p.url} delay={i * 0.07}>
+            <a href={p.url} target="_blank" rel="noopener noreferrer" className="glass ember-border group flex h-full flex-col justify-between gap-8 rounded-4xl p-7 transition-transform duration-300 hover:-translate-y-1 md:p-9">
+              <h3 className="font-display text-lg font-semibold text-white md:text-xl">{p.title}</h3>
+              <span className="inline-flex items-center gap-2 text-sm text-hi transition-colors group-hover:text-white">
+                Open link
+                <span aria-hidden className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+              </span>
+            </a>
+          </Reveal>
         ))}
       </div>
     </Section>
@@ -123,7 +144,7 @@ export function Highlights() {
 
 export function Portfolios() {
   return (
-    <Section id="portfolios" num="06" title="portfolio links" kicker="full work samples, organized by role">
+    <Section id="portfolios" num="07" title="portfolio links" kicker="full work samples, organized by role">
       <div className="grid gap-4 md:grid-cols-3">
         {portfolios.map((p, i) => (
           <Reveal key={p.url} delay={i * 0.07}>
@@ -143,7 +164,7 @@ export function Portfolios() {
 
 export function Contact() {
   return (
-    <Section id="contact" num="07" title="let's work together" kicker="one message. i'll take it from there.">
+    <Section id="contact" num="08" title="let's work together" kicker="one message. i'll take it from there.">
       <div className="grid gap-4 sm:grid-cols-2">
         {contacts.map((c, i) => (
           <Reveal key={c.url} delay={i * 0.06}>
