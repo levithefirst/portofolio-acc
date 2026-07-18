@@ -22,7 +22,7 @@ export function About() {
       <Reveal>
         <div className="glass ember-border rounded-4xl p-7 md:p-12">
           <p className="max-w-3xl font-display text-xl leading-relaxed text-white/90 md:text-3xl">
-            i'm a jack of all creative trades and master of content. i specialize in{" "}
+            i specialize in{" "}
             <span className="text-melt">copywriting, content creation, content strategy, and community management</span>{" "}
             in Web3.
           </p>
