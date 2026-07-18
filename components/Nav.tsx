@@ -32,14 +32,3 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-        </div>
-        
-          href="#contact"
-          className="rounded-full bg-gradient-to-r from-deep via-[#6b3231] to-deep px-4 py-2 text-sm font-medium text-white shadow-lg shadow-black/40 transition-transform duration-200 hover:scale-[1.04] active:scale-95"
-        >
-          hire me
-        </a>
-      </nav>
-    </motion.header>
-  );
-}
