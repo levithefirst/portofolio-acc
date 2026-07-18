@@ -27,6 +27,7 @@ export const services = [
 export const clients = [
   "WORM (EIP-7503)", "WolfSwap", "ADI Chain", "Beldex", "LAB Trade", "Noracle",
   "OpenLoot", "Stratis EVM", "Tradyxyz", "Vultisig", "XMAQUINA", "WinR",
+  "Altura", "Flint RWA", "Rain Trade",
 ];
 
 export const toolOfTheDay: { label: string; url: string }[] = [
@@ -75,18 +76,25 @@ export const simplified: { label: string; url: string }[] = [
 ];
 
 export const highlights = [
-  { title: "21 prompts that put you in the top 1% of creators", url: "https://x.com/i/status/2058892857595846850" },
-  { title: "Inside The Mind of an Optimist in Crypto", url: "https://x.com/i/status/2004912666871992621" },
-  { title: "you don't need a niche, you need one reader", url: "https://x.com/i/status/2015059020852113580" },
-  { title: "44 AI Terms Everyone Should Know", url: "https://x.com/i/status/2061342020858204561" },
-  { title: "A Guide to The Robinhood Ecosystem", url: "https://x.com/i/status/2074856899548188984" },
-  { title: "10 Realistic Ways to Make Money during the 2026 FIFA World Cup", url: "https://x.com/i/status/2063908968976597334" },
+  { title: "21 prompts that put you in the top 1% of creators", url: "https://x.com/i/status/2058892857595846850", label: "Article" },
+  { title: "Inside The Mind of an Optimist in Crypto", url: "https://x.com/i/status/2004912666871992621", label: "Article" },
+  { title: "you don't need a niche, you need one reader", url: "https://x.com/i/status/2015059020852113580", label: "Article" },
+  { title: "44 AI Terms Everyone Should Know", url: "https://x.com/i/status/2061342020858204561", label: "Article" },
+  { title: "A Guide to The Robinhood Ecosystem", url: "https://x.com/i/status/2074856899548188984", label: "Thread" },
+  { title: "10 Realistic Ways to Make Money during the 2026 FIFA World Cup", url: "https://x.com/i/status/2063908968976597334", label: "Article" },
 ];
 
 export const portfolios = [
   { title: "Content Partnerships Portfolio", url: "https://drive.google.com/drive/folders/1AJbxKymAyE2KDgSFhSW8BVd6HJuxalu7" },
   { title: "Project Contributor Portfolio", url: "https://drive.google.com/drive/folders/1TfeWApWccEqiS_si2IGWFiBPw9RyP6nI" },
   { title: "SMM Roles Portfolio", url: "https://drive.google.com/drive/folders/1HJJGcjgPhMv9JhwbJbbkNLQje-r087tU" },
+  { title: "Community Management Portfolio", url: "https://drive.google.com/drive/folders/1APScMba6_20jxrM2lsle-ZqKqEUbhL9C" },
+];
+
+export const bountyWins = [
+  { title: "Bounty Wins Portfolio", url: "https://drive.google.com/drive/folders/16Eh_BYRH5FOrswQlA_B7J1D_MnNgOMhL" },
+  { title: "Superteam Profile", url: "https://superteam.fun/earn/t/levithefirst" },
+  { title: "Scribble Profile", url: "https://scribble.network/user/leviofweb3" },
 ];
 
 export const contacts = [
