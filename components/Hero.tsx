@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { stats } from "@/lib/data";
 
-const tags = ["copywriting", "content creation", "content strategy", "community management"];
-
 const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Hero() {
@@ -57,19 +55,6 @@ export default function Hero() {
         >
           copywriting • <span className="text-white/90">i fix the copy that's costing you users.</span>
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.32, ease }}
-          className="mt-7 flex flex-wrap gap-2.5"
-        >
-          {tags.map((t) => (
-            <span key={t} className="glass rounded-full px-4 py-2 text-xs text-white/80 md:text-sm">
-              {t}
-            </span>
-          ))}
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
